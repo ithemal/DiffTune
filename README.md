@@ -4,6 +4,21 @@ DiffTune is a system for learning the parameters of x86 basic block CPU simulato
 Given a simulator, DiffTune learns its parameters by first replacing the original simulator with a differentiable surrogate, another function that approximates the original function; by making the surrogate differentiable, DiffTune is then able to apply gradient-based optimization techniques even when the original function is non-differentiable, such as is the case with CPU simulators. 
 With this differentiable surrogate, DiffTune then applies gradient-based optimization to produce values of the simulator's parameters that minimize the simulator's error on a dataset of ground truth end-to-end performance measurements. Finally, the learned parameters are plugged back into the original simulator.
 
+## Paper
+
+The full paper is available at: https://arxiv.org/abs/2010.04017
+
+To cite the paper, the BibTeX is:
+
+```
+@inproceedings{renda2020difftune,
+    title={DiffTune: Optimizing CPU Simulator Parameters with Learned Differentiable Surrogates},
+    author={Renda, Alex and Chen, Yishen and Mendis, Charith and Carbin, Michael},
+    booktitle={IEEE/ACM International Symposium on Microarchitecture},
+    year={2020},
+}
+```
+
 ## Install
 ### Environment requirements
 - [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
