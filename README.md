@@ -19,6 +19,10 @@ To cite the paper, the BibTeX is:
 }
 ```
 
+## Demo
+
+A small-scale demo of DiffTune on a synthetic dataset is available at https://colab.research.google.com/drive/1N5pqyYKxmkuwBIHzTcp8DqqVOCEnqCV4?playground=true
+
 ## Install
 ### Environment requirements
 - [nvidia-docker](https://github.com/NVIDIA/nvidia-docker)
